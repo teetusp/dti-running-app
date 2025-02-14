@@ -20,7 +20,7 @@ function RunOfRunner() {
               <RunCircleIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Run of Runner by Ninnin DTI-SAU Wow
+              Run of Runner by Ninnin DTI-SAU
             </Typography>
             <Button color="inherit">Login</Button>
           </Toolbar>
