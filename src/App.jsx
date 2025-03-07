@@ -25,7 +25,7 @@ function App() {
           <Route path="/run/addrunofrunner" element={<AddRunOfRunner />} />
           <Route path="/run/delrunofrunner" element={<DelRunOfRunner />} />
           <Route path="/run/runofrunner" element={<RunOfRunner />} />
-          <Route path="/run/editrunofrunner" element={<EditRunOfRunner />} />
+          <Route path="/run/editrunofrunner/:runId" element={<EditRunOfRunner />} />
         </Routes>
       </BrowserRouter>
     </>
