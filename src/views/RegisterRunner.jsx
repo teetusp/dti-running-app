@@ -73,7 +73,7 @@ function RegisterRunner() {
       alert(`พบปัญหาในการทำงาน ลองใหม่อีกครั้ง หรือติดต่อผู้ดูแล : ${error}`);
     }    
   }
-
+ 
   return (
     <>
       <Box sx={{ width: '100%' }}>
