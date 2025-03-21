@@ -103,7 +103,7 @@ function EditRunOfRunner() {
         method: 'PUT',
         body: formData,       
         headers: {
-          'Accept': 'application/json',
+          'Accept': 'application/json', //
         }, 
       })
 
