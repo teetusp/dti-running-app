@@ -21,7 +21,7 @@ function LoginRunner() {
 
     //ส่งข้อมูลไปตรวจสอบ DB
     try{
-      const response = await fetch(`http://localhost:3030/runner/${runnerUsername}/${runnerPassword}`, {
+      const response = await fetch(`http://localhost:4444/runner/${runnerUsername}/${runnerPassword}`, {
         method: 'GET',
       })
 

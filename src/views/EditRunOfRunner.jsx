@@ -35,7 +35,7 @@ function EditRunOfRunner() {
     //ดึงข้อมูลการวิ่งหนึ่งของนักวิ่งจากฐานข้อมูล
     try {
       const getOnlyData = async () => {
-        const response = await fetch(`http://localhost:3030/run/only/${runId}`, {
+        const response = await fetch(`http://localhost:4444/run/only/${runId}`, {
           method: 'GET',
         })
 
@@ -99,7 +99,7 @@ function EditRunOfRunner() {
     //ส่งข้อมูลไปผ่าน API ที่กำหนดไว้ที่ Back-end
     try{
       //ส่งไปบันทึก
-      const response = await fetch(`http://localhost:3030/run/${runId}`, {
+      const response = await fetch(`http://localhost:4444/run/${runId}`, {
         method: 'PUT',
         body: formData,       
         headers: {
@@ -108,7 +108,7 @@ function EditRunOfRunner() {
       })
 
       //เช็คสถานะการส่งไป
-      if(response.status === 200){
+      if(response.status === 201){
         alert('บันทึกแก้ไขการวิ่งสําเร็จ');
         window.location.href = '/run/runofrunner';
       }else{
@@ -122,7 +122,7 @@ function EditRunOfRunner() {
   return (
     <>  {/* React Fragment */}
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" sx={{ backgroundColor: '#ff0000' }}>
+        <AppBar position="static" sx={{ backgroundColor: 'green' }}>
           <Toolbar>
             <IconButton
               size="large"
@@ -140,9 +140,9 @@ function EditRunOfRunner() {
               {runnerName}
             </Typography>
             <Avatar alt="Runner"
-              src={runnerImage === '' ? Person : `http://localhost:3030/images/runner/${runnerImage}`}
+              src={runnerImage === '' ? Person : `http://localhost:4444/images/runner/${runnerImage}`}
               sx={{ width: 50, height: 50, ml: 2 }} />
-            <Link to="/" style={{ textDecoration: 'none', color: 'green', marginLeft: '10px' }}>
+            <Link to="/" style={{ textDecoration: 'none', color: 'white', marginLeft: '10px' }}>
               Logout
             </Link>
           </Toolbar>
@@ -176,7 +176,7 @@ function EditRunOfRunner() {
               sx={{ mx: 'auto', mb: 3, width: 150, height: 150, boxShadow: 2, p: 2 }}
               src={
                 runNewImage == null
-                ? runImage === '' ? Run : `http://localhost:3030/images/run/${runImage}`
+                ? runImage === '' ? Run : `http://localhost:4444/images/run/${runImage}`
                 : URL.createObjectURL(runNewImage)
               } />
 

@@ -57,7 +57,7 @@ function RegisterRunner() {
     //ส่งข้อมูลไปผ่าน API ที่กำหนดไว้ที่ Back-end
     try{
       //ส่งไปบันทึก
-      const response = await fetch('http://localhost:3030/runner/', {
+      const response = await fetch('http://localhost:4444/runner/', {
         method: 'POST',
         body: formData,        
       })
