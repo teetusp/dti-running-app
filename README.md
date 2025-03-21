@@ -2,5 +2,6 @@
 
 พัฒนาด้วย React
 
-![image](https://github.com/user-attachments/assets/5ba90273-e9e1-4ca9-926b-aaaae7c0b9d6)
+![image](![image](https://github.com/user-attachments/assets/0dece504-4f21-441c-a348-c8107ca48733)
+)
 
