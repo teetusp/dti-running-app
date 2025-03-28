@@ -74,7 +74,7 @@ function LoginRunner() {
                 </Link> 
               </Typography>              
             </Typography>
-            <Typography variant='h6' sx={{mt: 4, textAlign: 'center'}}>
+            <Typography variant='subtitle2' sx={{mt: 4, textAlign: 'center', color: '#011474'}}>
               Created by Teetus DTI-SAU 2025
             </Typography>
           </Box>
