@@ -74,6 +74,9 @@ function LoginRunner() {
                 </Link> 
               </Typography>              
             </Typography>
+            <Typography variant='h3' sx={{mt: 4, textAlign: 'center'}}>
+              Created by Teetus DTI-SAU 2025
+            </Typography>
           </Box>
         </Box>
       </Box>
